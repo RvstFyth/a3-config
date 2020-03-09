@@ -1,0 +1,7 @@
+#!/bin/sh
+
+filename=$(basename -- "$1")
+extension="${filename##*.}"
+filename="${filename%.*}"
+
+dunstify "Now playing" "$filename ($2)" -r 99991 --replace=99991

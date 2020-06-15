@@ -77,6 +77,9 @@ bindsym $mod+h split h
 # split in vertical orientation
 bindsym $mod+v split v
 
+# Make current container tabbed
+bindsym $mod+u exec i3-msg split v && i3-msg layout tabbed
+
 # enter fullscreen mode for the focused container
 bindsym $mod+f fullscreen toggle
 

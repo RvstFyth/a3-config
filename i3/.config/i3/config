@@ -185,6 +185,7 @@ bindsym $mod+period workspace next_on_output
 
 # Rofi
 bindsym $mod+s exec "rofi -modi run -show drun"
+# bindsym $mod+shift+q "rofi -modi run -show ssh"
 
 # Custom script for opening dmenu so pywal colors are used
 bindsym $mod+d exec $HOME/.config/i3/scripts/dmen.sh
@@ -244,7 +245,7 @@ focus_follows_mouse no
 exec --no-startup-id clipster -d
 
 # shortcut to selection widget (primary)
-bindsym $mod+c exec clipster -sp
+bindsym $mod+c exec clipster -sc
 
 # Trigger commands with rofi
 # bindsym $mod+t exec --no-startup-id "rofi -show drun -run-shell-command '{terminal} -e \\" {cmd}; read -n 1 -s\\"'"

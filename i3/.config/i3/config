@@ -210,6 +210,9 @@ exec_always --no-startup-id feh --bg-fill /home/x3r/projects/wallpapers/zombie1.
 # Launch polybar
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
+# Toggle polybar
+bindsym $mod+F12 exec polybar-msg cmd toggle
+
 # Picom compositer
 exec --no-startup-id picom -b
 

@@ -36,13 +36,6 @@ def list_tasks():
 
     tmp = tmp[:-1]
     selected = subprocess.getoutput("echo '" + tmp + "' | rofi -sep '|' -dmenu -p 'Tasks'")
-    #p = subprocess.Popen(
-    #    ['rofi', '-sep', '|', '-dmenu', '-kb-custom-1', 'Ctrl+Delete', '-p', 'Tasks'],
-    #    stdout=subprocess.PIPE, stdin=subprocess.PIPE
-    #)
-    #selected = p.communicate(tmp.encode('utf8'))
-    #print(selected)
-    #exit(1)
     if selected != '':
         selected_index = int(selected.split(" ")[0])
         selected_task = tasks[selected_index - 1]

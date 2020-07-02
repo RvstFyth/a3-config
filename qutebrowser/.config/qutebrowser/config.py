@@ -14,6 +14,11 @@ config.bind('xz', 'config-cycle statusbar.hide')
 config.bind('xc', 'config-cycle statusbar.hide ;; config-cycle tabs.show always switching')
 
 
+# Umpv
+config.bind(',m', 'spawn --userscript /home/x3r/.config/qutebrowser/userscripts/umpv {url}')
+config.bind(',M', 'hint links spawn --userscript /home/x3r/.config/qutebrowser/userscripts/umpv {hint-url}')
+config.bind(';M', 'hint --rapid links spawn --userscript /home/x3r/.config/qutebrowser/userscripts/umpv {hint-url}')
+
 c.url.searchengines = {
    "DEFAULT":'https://duckduckgo.com/?q={}',
    'ap': 'https://archlinux.org/packages/?q={}',

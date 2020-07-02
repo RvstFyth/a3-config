@@ -35,7 +35,7 @@ height = 23
 ;offset-x = 1%
 ;offset-y = 1%
 ;radius = 6.0
-fixed-center = false
+fixed-center = true
 enable-ipc = true
 
 background = ${colors.background}

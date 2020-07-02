@@ -1,9 +1,9 @@
 # Alias for downloading a youtube/soundcloud file and convert to mp3
 alias ymp3='youtube-dl --extract-audio --audio-format mp3 -o "~/projects/music/%(title)s.%(ext)s"'
 
-
 alias ls='ls -lhF --color=auto --group-directories-first'
 alias lsa='ls -AlhF --color=auto --group-directories-first'
+alias mkd='mkdir -pv'
 
 # Query IP address
 alias myip='dig +short myip.opendns.com @resolver1.opendns.com'
@@ -13,3 +13,6 @@ alias pyser='python -m http.server'
 
 # Generate a random password
 alias npass='openssl rand -base64 20'
+
+# Mysql log
+alias mlog='sed "s/\\\040/ /g" < ~/.mysql_history' 

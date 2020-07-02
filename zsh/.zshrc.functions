@@ -2,3 +2,8 @@
 i3keys() {
     notify-send "i3-bind" "$(grep '^bindsym' ~/.config/i3/config | sed 's/bindsym //' | rofi -i -dmenu)"
 }
+
+# Stream audio only from youtube with mpv.
+ympv() {
+    mpv $1 --no-video --shuffle --term-playing-msg='Title: ${media-title}' --input-ipc-server=/tmp/ympv
+}

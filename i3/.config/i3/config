@@ -262,6 +262,13 @@ bindsym $mod+t exec $HOME/.config/i3/scripts/tasks/main.py
 # Manage tasks
 bindsym $mod+y exec "$HOME/.config/i3/scripts/tasks/main.py list"
 
+# Ympv
+bindsym ctrl+shift+9 exec "$HOME/.config/i3/scripts/ympv/main.py"
+
+# Brightness controls
+bindsym $mod+shift+Prior exec --no-startup-id "xrandr --output HDMI-1 --brightness 1.0"
+bindsym $mod+shift+Next exec --no-startup-id "xrandr --output HDMI-1 --brightness 0.7"
+
 for_window [window_role="pop-up"] floating enable
 for_window [window_role="bubble"] floating enable
 for_window [window_role="task_dialog"] floating enable
